@@ -32,10 +32,6 @@
     state: absent
   become: true
 
-- name: 5. install Hello World PHP script
-  copy: src=index.php dest=/var/www/html/index.php mode=0664
-  become: true
-
-- name: 6. start Apache
+- name: 5. start Apache
   service: name=apache2 state=started enabled=yes
   become: true

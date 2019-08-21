@@ -3,3 +3,5 @@
 *.tfstate*
 terraform.tfvars
 *.bak
+ansible/hosts
+*.pem
